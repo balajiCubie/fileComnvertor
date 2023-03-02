@@ -28,7 +28,7 @@ import Trophy from 'src/views/dashboard/Trophy'
 import { createClient } from 'next-sanity'
 
 const client = createClient({
-  projectId: 't0tgcmpy',
+  projectId: '6zrpvplh',
   dataset: 'production',
   apiVersion: '2021-10-14',
   useCdn: false

@@ -38,6 +38,22 @@ const Trophy = props => {
           {props.desc}
         </Typography>
 
+        <Typography variant='body2' sx={{ letterSpacing: '0.25px' }}>
+          <span className="badge text-bg-success mt-3 me-2">{props.tag}</span>
+          {
+            props.relatedTags ?
+              props.relatedTags.map((data, index) => {
+                return (
+                  <span className="badge text-bg-warning mt-3 me-1" key={index}>
+                    {data}
+                  </span>
+                )
+              })
+              :
+              <></>
+          }
+        </Typography>
+
         <Typography variant='h6' sx={{ my: 4 }}>
           {props.typCal}
         </Typography>

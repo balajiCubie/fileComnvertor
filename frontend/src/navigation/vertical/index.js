@@ -15,32 +15,67 @@ const navigation = () => {
       path: '/'
     },
     {
-      sectionTitle: 'Apps'
+      sectionTitle: 'File Converters'
     },
     {
-      title: 'Calculators',
+      title: 'File Converters',
       icon: CalculatorIcon,
-      path: '/calculators'
+      path: '/converters'
     },
     {
-      title: 'Finance Calculators',
-      icon: CurrencyInrIcon,
-      path: '/finance-calculators'
+      title: 'Archive',
+      icon: CalculatorIcon,
+      path: '/archive'
     },
     {
-      title: 'Health Calculators',
-      icon: HospitalIcon,
-      path: '/health-calculators'
+      title: 'Audio',
+      icon: CalculatorIcon,
+      path: '/audio'
     },
     {
-      title: 'Math Calculators',
-      icon: FunctionsIcon,
-      path: '/math-calculators'
+      title: 'CAD',
+      icon: CalculatorIcon,
+      path: '/cad'
     },
     {
-      title: 'Others Calculators',
-      icon: MoreIcon,
-      path: '/others-calculators'
+      title: 'Document',
+      icon: CalculatorIcon,
+      path: '/document'
+    },
+    {
+      title: 'EBook',
+      icon: CalculatorIcon,
+      path: '/ebook'
+    },
+    {
+      title: 'Image',
+      icon: CalculatorIcon,
+      path: '/image'
+    },
+    {
+      title: 'Misc',
+      icon: CalculatorIcon,
+      path: '/misc'
+    },
+    {
+      title: 'Presentations',
+      icon: CalculatorIcon,
+      path: '/presentations'
+    },
+    {
+      title: 'Spreadsheet',
+      icon: CalculatorIcon,
+      path: '/spreadsheet'
+    },
+    {
+      title: 'Vector',
+      icon: CalculatorIcon,
+      path: '/vector'
+    },
+    {
+      title: 'Video',
+      icon: CalculatorIcon,
+      path: '/video'
     },
   ]
 }

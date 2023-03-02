@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid'
 import { createClient } from 'next-sanity'
 
 const client = createClient({
-  projectId: 't0tgcmpy',
+  projectId: '6zrpvplh',
   dataset: 'production',
   apiVersion: '2021-10-14',
   useCdn: false
@@ -17,7 +17,7 @@ const client = createClient({
 export async function getServerSideProps(context) {
   const slug = context.params.slug
 
-  const post = await client.fetch(`*[_type == "finance" && slug.current == $slug][0]`, { slug })
+  const post = await client.fetch(`*[_type == "archive" && slug.current == $slug][0]`, { slug })
 
   return {
     props: {
