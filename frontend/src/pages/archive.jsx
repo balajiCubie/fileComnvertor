@@ -82,7 +82,7 @@ const Archive = ({ app }) => {
     <ApexChartWrapper>
 
       <div className='mb-5 d-flex'>
-        <Dropdown>
+        {/* <Dropdown>
           <Dropdown.Toggle variant="dark" id="dropdown-basic">
             Options
           </Dropdown.Toggle>
@@ -93,10 +93,10 @@ const Archive = ({ app }) => {
               <Dropdown.Item onClick={clickedOption} key={index}>{data}</Dropdown.Item>
             ))}
           </Dropdown.Menu>
-        </Dropdown>
-        <button className='me-3 btn btn-light' disabled>
+        </Dropdown> */}
+        {/* <button className='me-3 btn btn-light' disabled>
           {currentOption}
-        </button>
+        </button> */}
         <Dropdown>
           <Dropdown.Toggle variant="dark" id="dropdown-basic">
             Tags
@@ -115,12 +115,11 @@ const Archive = ({ app }) => {
 
       <Grid container spacing={6}>
         {/* {app.length > 0 && ( */}
-        <>
           {
-            currentTag != "All" ?
-              app.slice(0).reverse().map(app => (
-                
-                Array(app?.relatedTags)[0].includes(currentTag)?
+            currentTag != "All" | currentOption != "All" ?
+            app.slice(0).reverse().map(app => (
+
+                Array(app?.relatedTags)[0].includes(currentTag) | app?.tag == currentOption ?
                   <Grid item xs={12} md={4} key={app._id}>
                     <Trophy name={app?.name} desc={app?.desc} slug={app?.slug} content={app?.content} typCal={app?.typCal} url={"archive"} tag={app?.tag} relatedTags={app?.relatedTags} />
                   </Grid>
@@ -134,7 +133,6 @@ const Archive = ({ app }) => {
                 </Grid>
               ))
           }
-        </>
         {/* )} */}
       </Grid>
     </ApexChartWrapper>
